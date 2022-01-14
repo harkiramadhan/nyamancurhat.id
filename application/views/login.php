@@ -36,15 +36,15 @@ License: For each use you must have a valid license purchased only from above li
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
-	<body class="bg-white position-relative">
+	<body class="bg-white position-relative" style="background-image: url(<?= base_url('assets/img/background/pattern.svg') ?>)";>
         <div class="d-flex flex-column flex-root">
 			<!--begin::Authentication - Sign-in -->
-			<div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(<?= base_url('assets/img/background/pattern.svg') ?>)";>
+			<div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed">
 				<!--begin::Content-->
 				<div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
 					<!--begin::Logo-->
 					<a href="<?= site_url('') ?>" class="mb-12">
-						<img alt="Logo" src="<?= base_url('assets/img/logo_texted_02.svg') ?>" class="h-50px">
+						<img alt="Logo" src="<?= base_url('assets/img/logo_texted_02.svg') ?>" class="h-30px mb-8 mt-10">
 					</a>
 					<!--end::Logo-->
 					<!--begin::Wrapper-->
