@@ -14,12 +14,12 @@
                 <div class="row g-10">
                     <!--begin::Col-->
                     <div class="col-xl-4">
-                        <div class="d-flex h-100 align-items-center">
+                        <div class="d-flex h-100">
                             <!--begin::Option-->
                             <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
                                 <!--begin::Heading-->
                                 <div class="mb-7 text-center">
-                                    <img src="<?= base_url('assets/img/pricing_03.png') ?>" class="img-fluid mb-10">
+                                    <img src="<?= base_url('assets/img/pricing_03.png') ?>" class="img-fluid mb-10 mt-20">
                                     <!--begin::Title-->
                                     <h1 class="text-dark mb-5 fw-boldest">Free Session</h1>
                                     <!--end::Title-->
@@ -35,7 +35,7 @@
                                 </div>
                                 <!--end::Heading-->
                                 <!--begin::Features-->
-                                <div class="w-100 mb-10">
+                                <div class="w-100 mb-20">
                                     <!--begin::Item-->
                                     <div class="d-flex flex-stack mb-5">
                                         <span class="fw-bold fs-6 text-gray-800 text-start pe-3">Bersifat Trial 30 menit</span>
@@ -49,7 +49,9 @@
                                 </div>
                                 <!--end::Features-->
                                 <!--begin::Select-->
-                                <a href="#" class="btn btn-primary d-block">Start Free Session</a>
+                                <div class="w-100 mb-n10">
+                                    <a href="#" class="btn btn-primary d-block">Start Free Session</a>
+                                </div>
                                 <!--end::Select-->
                             </div>
                             <!--end::Option-->
@@ -58,7 +60,7 @@
                     <!--end::Col-->
                     <!--begin::Col-->
                     <div class="col-xl-4">
-                        <div class="d-flex h-100 align-items-center">
+                        <div class="d-flex h-100">
                             <!--begin::Option-->
                             <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
                                 <!--begin::Heading-->
@@ -99,7 +101,9 @@
                                 </div>
                                 <!--end::Features-->
                                 <!--begin::Select-->
-                                <a href="#" class="btn btn-primary d-block">Start Premium Session</a>
+                                <div class="w-100 mb-n2">
+                                    <a href="#" class="btn btn-primary d-block">Start Premium Session</a>
+                                </div>
                                 <!--end::Select-->
                             </div>
                             <!--end::Option-->
@@ -108,7 +112,7 @@
                     <!--end::Col-->
                     <!--begin::Col-->
                     <div class="col-xl-4">
-                        <div class="d-flex  align-items-center">
+                        <div class="d-flex h-100 align-items-center">
                             <!--begin::Option-->
                             <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
                                 <!--begin::Heading-->
@@ -128,7 +132,7 @@
                                 </div>
                                 <!--end::Heading-->
                                 <!--begin::Features-->
-                                <div class="w-100 mb-10">
+                                <div class="w-100 mb-5">
                                     <!--begin::Item-->
                                     <div class="d-flex flex-stack mb-5">
                                         <span class="fw-bold fs-6 text-gray-800 text-start pe-3">Bisa mengajukan offline</span>
@@ -152,7 +156,9 @@
                                 </div>
                                 <!--end::Features-->
                                 <!--begin::Select-->
-                                <a href="#" class="btn btn-primary d-block">Start Team Session</a>
+                                <div class="w-100 mb-10">
+                                    <a href="#" class="btn btn-primary d-block">Start Team Session</a>
+                                </div>
                                 <!--end::Select-->
                             </div>
                             <!--end::Option-->
