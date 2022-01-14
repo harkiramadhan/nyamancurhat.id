@@ -1,0 +1,32 @@
+.mt-n75{
+    margin-top: -4.50rem !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .mt-n75{
+        margin-top: -7.25rem !important;
+    }    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .mt-n75{
+        margin-top: -8.25rem !important;
+    }    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mt-n75{
+        margin-top: -4.75rem !important;
+    }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .mt-n75{
+        margin-top: -6.25rem !important;
+    }        
+}
