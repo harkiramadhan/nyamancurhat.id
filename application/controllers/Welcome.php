@@ -18,8 +18,33 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('landing');
+	public function index(){
+		$var = [
+			'title' => "",
+			'contents' => [
+				'landing'
+			]
+		];
+		$this->load->view('templates', $var);
+	}
+
+	function cara_curhat(){
+		$var = [
+			'title' => "Cara Curhat",
+			'contents' => [
+				'cara_curhat'
+			]
+		];
+		$this->load->view('templates', $var);
+	}
+
+	function coach_profile(){
+		$var = [
+			'title' => "Coach Profile",
+			'contents' => [
+				'coach_profile'
+			]
+		];
+		$this->load->view('templates', $var);
 	}
 }
