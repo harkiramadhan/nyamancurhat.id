@@ -70,11 +70,37 @@ License: For each use you must have a valid license purchased only from above li
 										<img alt="Logo" src="<?= base_url('assets/img/logo_texted_02.svg') ?>" class="logo-sticky h-20px h-lg-25px" />
 									</a>
 									<!--end::Logo image-->
+
+									<!-- begin::Menu wrapper -->
+									<div class="d-inline d-lg-none" id="kt_header_nav_wrapper"><div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}" style="">
+										<!--begin::Menu-->
+										<div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-bold" id="kt_landing_menu">
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a href="<?= site_url('') ?>" class="btn btn-outline btn-outline-primary btn-active-light-primary mt-3">Cara Curhat</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+											<!--begin::Menu item-->
+											<div class="menu-item">
+												<!--begin::Menu link-->
+												<a href="<?= site_url('') ?>" class="btn btn-primary mt-3">Coach Profile</a>
+												<!--end::Menu link-->
+											</div>
+											<!--end::Menu item-->
+										</div>
+										<!--end::Menu-->
+									</div>
+									
+								</div>
+									<!-- end::Menu wrapper -->
 								</div>
 								<!--end::Logo-->
 								<!--begin::Toolbar-->
 								<div class="flex-equal text-end ms-1">
-									<a href="../../demo20/dist/authentication/flows/basic/sign-in.html" class="btn btn-success">Sign In</a>
+									<a href="<?= site_url('') ?>" class="btn btn-outline btn-outline-primary btn-active-light-primary d-none d-lg-inline">Cara Curhat</a>
+									<a href="<?= site_url('') ?>" class="btn btn-primary d-none d-lg-inline">Coach Profile</a>
 								</div>
 								<!--end::Toolbar-->
 							</div>
@@ -362,21 +388,15 @@ License: For each use you must have a valid license purchased only from above li
 					</div>
 					<!--end::Row-->
 					<!--begin::Highlight-->
-					<div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #00A3FF 0%, #1976D2 100%);">
-						<!--begin::Content-->
-						<div class="my-2 me-5">
-							<!--begin::Title-->
-							<div class="fs-1 fs-lg-2qx fw-bolder text-white mb-2">Start With Metronic Today,
-							<span class="fw-normal">Speed Up Development!</span></div>
-							<!--end::Title-->
-							<!--begin::Description-->
-							<div class="fs-6 fs-lg-5 text-white fw-bold opacity-75">Join over 100,000 Professionals Community to Stay Ahead</div>
-							<!--end::Description-->
+					<div class="card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #00A3FF 0%, #1976D2 100%);">
+						<div class="row row justify-content-around">
+							<div class="col-lg-7">
+								<img src="<?= base_url('assets/img/logo_full_white.svg') ?>" alt="" class="img-fluid logo-fly">
+							</div>
+							<div class="col-lg-3 mt-4 mt-lg-0">
+								<a href="#" class="btn btn-lg btn-outline border-2 btn-outline-white d-block">Book a session now</a>
+							</div>
 						</div>
-						<!--end::Content-->
-						<!--begin::Link-->
-						<a href="#" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">Book a session now</a>
-						<!--end::Link-->
 					</div>
 					<!--end::Highlight-->
 				</div>
