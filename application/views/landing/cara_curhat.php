@@ -19,7 +19,7 @@
                             <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
                                 <!--begin::Heading-->
                                 <div class="mb-7 text-center">
-                                    <img src="<?= base_url('assets/img/pricing_01.png') ?>" class="img-fluid mb-10">
+                                    <img src="<?= base_url('assets/img/pricing_03.png') ?>" class="img-fluid mb-10">
                                     <!--begin::Title-->
                                     <h1 class="text-dark mb-5 fw-boldest">Free Session</h1>
                                     <!--end::Title-->
@@ -108,12 +108,12 @@
                     <!--end::Col-->
                     <!--begin::Col-->
                     <div class="col-xl-4">
-                        <div class="d-flex h-100 align-items-center">
+                        <div class="d-flex  align-items-center">
                             <!--begin::Option-->
                             <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
                                 <!--begin::Heading-->
                                 <div class="mb-7 text-center">
-                                    <img src="<?= base_url('assets/img/pricing_03.png') ?>" class="img-fluid mb-10">
+                                    <img src="<?= base_url('assets/img/pricing_01.png') ?>" class="img-fluid mb-10">
                                     <!--begin::Title-->
                                     <h1 class="text-dark mb-5 fw-boldest">Special Session</h1>
                                     <!--end::Title-->
