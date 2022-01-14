@@ -24,7 +24,7 @@ License: For each use you must have a valid license purchased only from above li
 		<meta property="og:url" content="https://keenthemes.com/metronic" />
 		<meta property="og:site_name" content="Keenthemes | Metronic" />
 		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-		<link rel="shortcut icon" href="<?= base_url('assets/media/logos/favicon.ico') ?>" />
+		<link rel="shortcut icon" href="<?= base_url('assets/img/logo_01.png') ?>" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
@@ -64,9 +64,9 @@ License: For each use you must have a valid license purchased only from above li
 									</button>
 									<!--end::Mobile menu toggle-->
 									<!--begin::Logo image-->
-									<a href="../../demo20/dist/landing.html">
-										<img alt="Logo" src="assets/media/logos/logo-landing.svg" class="logo-default h-25px h-lg-30px" />
-										<img alt="Logo" src="assets/media/logos/logo-landing-dark.svg" class="logo-sticky h-20px h-lg-25px" />
+									<a href="<?= site_url('') ?>">
+										<img alt="Logo" src="<?= base_url('assets/img/logo_texted_02.png') ?>" class="logo-default h-25px h-lg-30px" />
+										<img alt="Logo" src="<?= base_url('assets/img/logo_texted_01.png') ?>" class="logo-sticky h-20px h-lg-25px" />
 									</a>
 									<!--end::Logo image-->
 								</div>
@@ -150,50 +150,6 @@ License: For each use you must have a valid license purchased only from above li
 							<!--end::Action-->
 						</div>
 						<!--end::Heading-->
-						<!--begin::Clients-->
-						<div class="d-flex flex-center flex-wrap position-relative px-5">
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-								<img src="assets/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-								<img src="assets/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
-								<img src="assets/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-								<img src="assets/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-								<img src="assets/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
-								<img src="assets/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-								<img src="assets/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-							<!--begin::Client-->
-							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-								<img src="assets/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
-							</div>
-							<!--end::Client-->
-						</div>
-						<!--end::Clients-->
 					</div>
 					<!--end::Landing hero-->
 				</div>
@@ -214,22 +170,18 @@ License: For each use you must have a valid license purchased only from above li
 					<!--begin::Heading-->
 					<div class="text-center mb-17">
 						<!--begin::Title-->
-						<h3 class="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">How it Works</h3>
+						<h3 class="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Keunggulan Curhat Di nyamancurhat.id</h3>
 						<!--end::Title-->
-						<!--begin::Text-->
-						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool
-						<br />for different amazing and great useful admin</div>
-						<!--end::Text-->
 					</div>
 					<!--end::Heading-->
 					<!--begin::Row-->
 					<div class="row w-100 gy-10 mb-md-20">
 						<!--begin::Col-->
-						<div class="col-md-4 px-5">
+						<div class="col-md-3 px-5">
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
-								<img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />
+								<img src="<?= base_url('assets/img/keunggulan01.png') ?>" class="mh-125px mb-9" alt="" />
 								<!--end::Illustration-->
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
@@ -237,25 +189,23 @@ License: For each use you must have a valid license purchased only from above li
 									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">1</span>
 									<!--end::Badge-->
 									<!--begin::Title-->
-									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Jane Miller</div>
+									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Lebih Privacy</div>
 									<!--end::Title-->
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-bold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
-								<br />by using single tool for different
-								<br />amazing and great</div>
+								<div class="fw-bold fs-6 fs-lg-4 text-muted">Kamu bisa curhat secara professional di kami tanpa harus memasukkan nomor handphone mu</div>
 								<!--end::Description-->
 							</div>
 							<!--end::Story-->
 						</div>
 						<!--end::Col-->
 						<!--begin::Col-->
-						<div class="col-md-4 px-5">
+						<div class="col-md-3 px-5">
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
-								<img src="assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" />
+								<img src="<?= base_url('assets/img/keunggulan02.png') ?>" class="mh-125px mb-9" alt="" />
 								<!--end::Illustration-->
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
@@ -263,25 +213,24 @@ License: For each use you must have a valid license purchased only from above li
 									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">2</span>
 									<!--end::Badge-->
 									<!--begin::Title-->
-									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Setup Your App</div>
+									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Waktu dan Tempat Fleksibel</div>
 									<!--end::Title-->
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-bold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
-								<br />by using single tool for different
-								<br />amazing and great</div>
+								<div class="fw-bold fs-6 fs-lg-4 text-muted">Curhat tanpa harus ribet catch up dengan konselor? 
+									<br> Yuk curhat di nyamancurhat.id!</div>
 								<!--end::Description-->
 							</div>
 							<!--end::Story-->
 						</div>
 						<!--end::Col-->
 						<!--begin::Col-->
-						<div class="col-md-4 px-5">
+						<div class="col-md-3 px-5">
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
-								<img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />
+								<img src="<?= base_url('assets/img/keunggulan03.png') ?>" class="mh-125px mb-9" alt="" />
 								<!--end::Illustration-->
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
@@ -289,14 +238,36 @@ License: For each use you must have a valid license purchased only from above li
 									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">3</span>
 									<!--end::Badge-->
 									<!--begin::Title-->
-									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Enjoy Nautica App</div>
+									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Lebih Nyaman dan Spontan</div>
 									<!--end::Title-->
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-bold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
-								<br />by using single tool for different
-								<br />amazing and great</div>
+								<div class="fw-bold fs-6 fs-lg-4 text-muted">Bingung nyari tempat curhat online yang nyaman? kamu boleh enggak nunjukin wajah jika dirasa kurang nyaman.</div>
+								<!--end::Description-->
+							</div>
+							<!--end::Story-->
+						</div>
+						<!--end::Col-->
+						<!--begin::Col-->
+						<div class="col-md-3 px-5">
+							<!--begin::Story-->
+							<div class="text-center mb-10 mb-md-0">
+								<!--begin::Illustration-->
+								<img src="<?= base_url('assets/img/keunggulan04.png') ?>" class="mh-125px mb-9" alt="" />
+								<!--end::Illustration-->
+								<!--begin::Heading-->
+								<div class="d-flex flex-center mb-5">
+									<!--begin::Badge-->
+									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">3</span>
+									<!--end::Badge-->
+									<!--begin::Title-->
+									<div class="fs-5 fs-lg-3 fw-bolder text-dark">Bisa Berlanjut ke Tahap Coaching</div>
+									<!--end::Title-->
+								</div>
+								<!--end::Heading-->
+								<!--begin::Description-->
+								<div class="fw-bold fs-6 fs-lg-4 text-muted">Selesai curhat, kamu bisa memperoleh solusi professional dari pakar dengan melanjutkan curhatmu ke tahap coaching loh!</div>
 								<!--end::Description-->
 							</div>
 							<!--end::Story-->
@@ -1376,12 +1347,8 @@ License: For each use you must have a valid license purchased only from above li
 					<!--begin::Heading-->
 					<div class="text-center mb-17">
 						<!--begin::Title-->
-						<h3 class="fs-2hx text-dark mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">What Our Clients Say</h3>
+						<h3 class="fs-2hx text-dark mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">Testimoni</h3>
 						<!--end::Title-->
-						<!--begin::Description-->
-						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool
-						<br />for different amazing and great useful admin</div>
-						<!--end::Description-->
 					</div>
 					<!--end::Heading-->
 					<!--begin::Row-->
@@ -1392,45 +1359,17 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
 								<!--begin::Wrapper-->
 								<div class="mb-7">
-									<!--begin::Rating-->
-									<div class="rating mb-6">
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-									</div>
-									<!--end::Rating-->
-									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">This is by far the cleanest template
-									<br />and the most well structured</div>
-									<!--end::Title-->
 									<!--begin::Feedback-->
-									<div class="text-gray-500 fw-bold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
+									<div class="text-gray-500 fw-bold fs-4">Saya pernah merasa stress di dalam pekerjaan karena sering mendapatkan tuntutan pekerjaan yang tidak masuk akal. Saat itulah saya curhat dengan Coach Akhlis. Dari curhat itu saya mendapat banyak inspirasi bagaimana bersikap di dalam pekerjaan. Alhamdulillah sekarang saya bisa menikmati pekerjaan. </div>
 									<!--end::Feedback-->
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Author-->
 								<div class="d-flex align-items-center">
-									<!--begin::Avatar-->
-									<div class="symbol symbol-circle symbol-50px me-5">
-										<img src="assets/media/avatars/300-1.jpg" class="" alt="" />
-									</div>
-									<!--end::Avatar-->
 									<!--begin::Name-->
 									<div class="flex-grow-1">
-										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Paul Miles</a>
-										<span class="text-muted d-block fw-bold">Development Lead</span>
+										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Mukhlis</a>
+										<span class="text-muted d-block fw-bold">Pegawai Swasta</span>
 									</div>
 									<!--end::Name-->
 								</div>
@@ -1439,51 +1378,24 @@ License: For each use you must have a valid license purchased only from above li
 							<!--end::Testimonial-->
 						</div>
 						<!--end::Col-->
+
 						<!--begin::Col-->
 						<div class="col-lg-4">
 							<!--begin::Testimonial-->
 							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
 								<!--begin::Wrapper-->
 								<div class="mb-7">
-									<!--begin::Rating-->
-									<div class="rating mb-6">
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-									</div>
-									<!--end::Rating-->
-									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">This is by far the cleanest template
-									<br />and the most well structured</div>
-									<!--end::Title-->
 									<!--begin::Feedback-->
-									<div class="text-gray-500 fw-bold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
+									<div class="text-gray-500 fw-bold fs-4">Saya senang berkegiatan sosial. Tapi entah kenapa karena hal ini, saya merasa ada orang-orang yang iri.  Perasaan ini sering muncul hingga menimbulkan rasa sakit fisik dan mental selama bertahun-tahun. Lalu saya minta di terapi oleh Coach Akhlis. Saat terapi saya merasa plong karena bisa curhat seluruh isi hati saya. Dari sini juga saya terinpirasi untuk Tahajud tiap malam. Alhamdulillah sekarang sakit yang dahulu muncul tidak pernah datang lagi.`</div>
 									<!--end::Feedback-->
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Author-->
 								<div class="d-flex align-items-center">
-									<!--begin::Avatar-->
-									<div class="symbol symbol-circle symbol-50px me-5">
-										<img src="assets/media/avatars/300-2.jpg" class="" alt="" />
-									</div>
-									<!--end::Avatar-->
 									<!--begin::Name-->
 									<div class="flex-grow-1">
-										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Janya Clebert</a>
-										<span class="text-muted d-block fw-bold">Development Lead</span>
+										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Cantik</a>
+										<span class="text-muted d-block fw-bold">Ibu Rumah Tangga</span>
 									</div>
 									<!--end::Name-->
 								</div>
@@ -1492,51 +1404,24 @@ License: For each use you must have a valid license purchased only from above li
 							<!--end::Testimonial-->
 						</div>
 						<!--end::Col-->
+
 						<!--begin::Col-->
 						<div class="col-lg-4">
 							<!--begin::Testimonial-->
 							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
 								<!--begin::Wrapper-->
 								<div class="mb-7">
-									<!--begin::Rating-->
-									<div class="rating mb-6">
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-										<div class="rating-label me-2 checked">
-											<i class="bi bi-star-fill fs-5"></i>
-										</div>
-									</div>
-									<!--end::Rating-->
-									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">This is by far the cleanest template
-									<br />and the most well structured</div>
-									<!--end::Title-->
 									<!--begin::Feedback-->
-									<div class="text-gray-500 fw-bold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
+									<div class="text-gray-500 fw-bold fs-4">Saya merasa nyaman curhat dengan Coach Akhlis. Dia bisa menggali lebih dalam apa yang benar-benar ingin saya sampaikan. Anehnya selama curhat bisa muncul ide-ide dari pikiran saya untuk menjawab permasalahan saya sendiri.</div>
 									<!--end::Feedback-->
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Author-->
 								<div class="d-flex align-items-center">
-									<!--begin::Avatar-->
-									<div class="symbol symbol-circle symbol-50px me-5">
-										<img src="assets/media/avatars/300-16.jpg" class="" alt="" />
-									</div>
-									<!--end::Avatar-->
 									<!--begin::Name-->
 									<div class="flex-grow-1">
-										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Steave Brown</a>
-										<span class="text-muted d-block fw-bold">Development Lead</span>
+										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Elva</a>
+										<span class="text-muted d-block fw-bold">Pengusaha</span>
 									</div>
 									<!--end::Name-->
 								</div>
@@ -1548,7 +1433,7 @@ License: For each use you must have a valid license purchased only from above li
 					</div>
 					<!--end::Row-->
 					<!--begin::Highlight-->
-					<div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+					<div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #00A3FF 0%, #1976D2 100%);">
 						<!--begin::Content-->
 						<div class="my-2 me-5">
 							<!--begin::Title-->
@@ -1561,7 +1446,7 @@ License: For each use you must have a valid license purchased only from above li
 						</div>
 						<!--end::Content-->
 						<!--begin::Link-->
-						<a href="https://1.envato.market/EA4JP" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">Purchase on Themeforest</a>
+						<a href="#" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">Book a session now</a>
 						<!--end::Link-->
 					</div>
 					<!--end::Highlight-->
@@ -1589,22 +1474,11 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Block-->
 								<div class="rounded landing-dark-border p-9 mb-10">
 									<!--begin::Title-->
-									<h2 class="text-white">Would you need a Custom License?</h2>
+									<h2 class="text-white">Ingin hubungi kami lebih lanjut?</h2>
 									<!--end::Title-->
 									<!--begin::Text-->
 									<span class="fw-normal fs-4 text-gray-700">Email us to
-									<a href="https://keenthemes.com/support" class="text-white opacity-50 text-hover-primary">support@keenthemes.com</a></span>
-									<!--end::Text-->
-								</div>
-								<!--end::Block-->
-								<!--begin::Block-->
-								<div class="rounded landing-dark-border p-9">
-									<!--begin::Title-->
-									<h2 class="text-white">How About a Custom Project?</h2>
-									<!--end::Title-->
-									<!--begin::Text-->
-									<span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service.
-									<a href="../../demo20/dist/pages/user-profile/overview.html" class="text-white opacity-50 text-hover-primary">Click to Get a Quote</a></span>
+									<a href="https://keenthemes.com/support" class="text-white opacity-50 text-hover-primary">akhlis2000@gmail.com</a></span>
 									<!--end::Text-->
 								</div>
 								<!--end::Block-->
@@ -1617,25 +1491,19 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Links-->
 									<div class="d-flex fw-bold flex-column me-20">
 										<!--begin::Subtitle-->
-										<h4 class="fw-bolder text-gray-400 mb-6">More for Metronic</h4>
+										<h4 class="fw-bolder text-gray-400 mb-6">More for nyamancurhat.id</h4>
 										<!--end::Subtitle-->
 										<!--begin::Link-->
-										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</a>
+										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Coach Profile</a>
 										<!--end::Link-->
 										<!--begin::Link-->
-										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Documentaions</a>
+										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">How To Book</a>
 										<!--end::Link-->
 										<!--begin::Link-->
-										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Video Tuts</a>
+										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Testimony</a>
 										<!--end::Link-->
 										<!--begin::Link-->
-										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Changelog</a>
-										<!--end::Link-->
-										<!--begin::Link-->
-										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</a>
-										<!--end::Link-->
-										<!--begin::Link-->
-										<a href="#" class="text-white opacity-50 text-hover-primary fs-5">Tutorials</a>
+										<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Address</a>
 										<!--end::Link-->
 									</div>
 									<!--end::Links-->
@@ -1652,20 +1520,8 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Link-->
 										<!--begin::Link-->
 										<a href="#" class="mb-6">
-											<img src="assets/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
-											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</span>
-										</a>
-										<!--end::Link-->
-										<!--begin::Link-->
-										<a href="#" class="mb-6">
 											<img src="assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
 											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>
-										</a>
-										<!--end::Link-->
-										<!--begin::Link-->
-										<a href="#" class="mb-6">
-											<img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2" alt="" />
-											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Dribbble</span>
 										</a>
 										<!--end::Link-->
 										<!--begin::Link-->
@@ -1695,27 +1551,14 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="d-flex align-items-center order-2 order-md-1">
 								<!--begin::Logo-->
 								<a href="../../demo20/dist/landing.html">
-									<img alt="Logo" src="assets/media/logos/logo-landing.svg" class="h-15px h-md-20px" />
+									<img alt="Logo" src="<?= base_url('assets/img/logo_texted_01.png') ?>" class="h-15px h-md-20px" />
 								</a>
 								<!--end::Logo image-->
 								<!--begin::Logo image-->
-								<span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="https://keenthemes.com">© 2021 Keenthemes Inc.</span>
+								<span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="https://keenthemes.com">Copyright © nyamancurhat.id <?= date('Y') ?></span>
 								<!--end::Logo image-->
 							</div>
 							<!--end::Copyright-->
-							<!--begin::Menu-->
-							<ul class="menu menu-gray-600 menu-hover-primary fw-bold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
-								<li class="menu-item">
-									<a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
-								</li>
-								<li class="menu-item mx-5">
-									<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
-								</li>
-								<li class="menu-item">
-									<a href="" target="_blank" class="menu-link px-2">Purchase</a>
-								</li>
-							</ul>
-							<!--end::Menu-->
 						</div>
 						<!--end::Wrapper-->
 					</div>
