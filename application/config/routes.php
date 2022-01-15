@@ -53,8 +53,11 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-
+## Auth
 $route['login'] = 'Auth/index';
 $route['signup'] = 'Auth/signup';
+$route['register'] = 'Auth/register';
+
+## Welcome
 $route['cara'] = 'Welcome/cara_curhat';
 $route['coach'] = 'Welcome/coach_profile';

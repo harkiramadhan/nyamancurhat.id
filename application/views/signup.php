@@ -50,9 +50,9 @@ License: For each use you must have a valid license purchased only from above li
 					<!--begin::Wrapper-->
 					<div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
 						<!--begin::Form-->
-						<form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_sign_in_form" action="#">
+						<form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework needs-validation" id="kt_sign_in_form" action="<?= site_url('register') ?>" method="POST">
 							<!--begin::Heading-->
-							<div class="text-center mb-10">
+							<div class="text-center mb-5">
 								<!--begin::Title-->
 								<h1 class="text-dark mb-3">Signup to nyamancurhat.id</h1>
 								<!--end::Title-->
@@ -61,14 +61,45 @@ License: For each use you must have a valid license purchased only from above li
 								<a href="<?= site_url('login') ?>" class="link-primary fw-bolder">Login</a></div>
 								<!--end::Link-->
 							</div>
+
+                            <?php if(@$this->session->flashdata('msg')): ?>
+                                <div class="mb-10 text-center text-danger"><strong><?= $this->session->flashdata('msg') ?></strong></div>
+                            <?php endif; ?>
+
 							<!--begin::Heading-->
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <!--begin::Input group-->
+                                    <div class="fv-row mb-10 fv-plugins-icon-container">
+                                        <!--begin::Label-->
+                                        <label class="form-label fs-6 fw-bolder text-dark">First Name</label>
+                                        <!--end::Label-->
+                                        <!--begin::Input-->
+                                        <input class="form-control form-control-lg form-control-solid" type="text" name="f_name" autocomplete="off" placeholder="First Name" required>
+                                        <!--end::Input-->
+                                    <div class="fv-plugins-message-container invalid-feedback"></div></div>
+                                    <!--end::Input group-->
+                                </div>
+                                <div class="col-lg-6">
+                                    <!--begin::Input group-->
+                                    <div class="fv-row mb-10 fv-plugins-icon-container">
+                                        <!--begin::Label-->
+                                        <label class="form-label fs-6 fw-bolder text-dark">Last Name</label>
+                                        <!--end::Label-->
+                                        <!--begin::Input-->
+                                        <input class="form-control form-control-lg form-control-solid" type="text" name="l_name" autocomplete="off" placeholder="Last Name" required>
+                                        <!--end::Input-->
+                                    <div class="fv-plugins-message-container invalid-feedback"></div></div>
+                                    <!--end::Input group-->
+                                </div>
+                            </div>
 							<!--begin::Input group-->
 							<div class="fv-row mb-10 fv-plugins-icon-container">
 								<!--begin::Label-->
 								<label class="form-label fs-6 fw-bolder text-dark">Email</label>
 								<!--end::Label-->
 								<!--begin::Input-->
-								<input class="form-control form-control-lg form-control-solid" type="email" name="email" autocomplete="off">
+								<input class="form-control form-control-lg form-control-solid" type="email" name="email" autocomplete="off" placeholder="Email" required>
 								<!--end::Input-->
 							<div class="fv-plugins-message-container invalid-feedback"></div></div>
 							<!--end::Input group-->
@@ -82,7 +113,7 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Input-->
-								<input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off">
+								<input class="form-control form-control-lg form-control-solid" type="password" name="password" id="input-pwd" autocomplete="off" placeholder="Password" required>
 								<!--end::Input-->
 							<div class="fv-plugins-message-container invalid-feedback"></div></div>
 							<!--end::Input group-->
@@ -96,14 +127,9 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Input-->
-                                <input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off">
                                 <div class="form-floating">
-                                    <input type="password" class="form-control is-invalid" id="floatingPassword2"/>
-                                    <label for="floatingPassword">Password not match</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input type="password" class="form-control is-valid" id="floatingPassword2"/>
-                                    <label for="floatingPassword">Password match</label>
+                                    <input type="password" class="form-control form-control-solid" id="conf-pwd" placeholder="Retype Password"/>
+                                    <label for="conf-pwd" id="text-conf-pwd"></label>
                                 </div>
 								<!--end::Input-->
 							<div class="fv-plugins-message-container invalid-feedback"></div></div>
@@ -112,7 +138,7 @@ License: For each use you must have a valid license purchased only from above li
 							<!--begin::Actions-->
 							<div class="text-center">
 								<!--begin::Submit button-->
-								<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
+								<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5" disabled>
 									<span class="indicator-label">Create an account</span>
 								</button>
 								<!--end::Submit button-->
@@ -143,6 +169,7 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="<?= base_url('assets/js/custom/pages/pricing/general.js') ?>"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
+        <script src="<?= base_url('assets/js/register.js') ?>"></script>
 	</body>
 	<!--end::Body-->
 </html>
