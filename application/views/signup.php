@@ -13,7 +13,7 @@ License: For each use you must have a valid license purchased only from above li
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
-		<title>Nyamancurhat.id - Login</title>
+		<title>Nyamancurhat.id - Signup</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -54,11 +54,11 @@ License: For each use you must have a valid license purchased only from above li
 							<!--begin::Heading-->
 							<div class="text-center mb-10">
 								<!--begin::Title-->
-								<h1 class="text-dark mb-3">Login to nyamancurhat.id</h1>
+								<h1 class="text-dark mb-3">Signup to nyamancurhat.id</h1>
 								<!--end::Title-->
 								<!--begin::Link-->
-								<div class="text-gray-400 fw-bold fs-4">New Here? 
-								<a href="<?= site_url('signup') ?>" class="link-primary fw-bolder">Create an Account</a></div>
+								<div class="text-gray-400 fw-bold fs-4">Already have an account? 
+								<a href="<?= site_url('login') ?>" class="link-primary fw-bolder">Login</a></div>
 								<!--end::Link-->
 							</div>
 							<!--begin::Heading-->
@@ -79,9 +79,6 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Label-->
 									<label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
 									<!--end::Label-->
-									<!--begin::Link-->
-									<a href="/metronic8/demo20/../demo20/authentication/layouts/basic/password-reset.html" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
-									<!--end::Link-->
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Input-->
@@ -89,11 +86,34 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Input-->
 							<div class="fv-plugins-message-container invalid-feedback"></div></div>
 							<!--end::Input group-->
+                            <!--begin::Input group-->
+							<div class="fv-row mb-10 fv-plugins-icon-container">
+								<!--begin::Wrapper-->
+								<div class="d-flex flex-stack mb-2">
+									<!--begin::Label-->
+									<label class="form-label fw-bolder text-dark fs-6 mb-0">Retype Password</label>
+									<!--end::Label-->
+								</div>
+								<!--end::Wrapper-->
+								<!--begin::Input-->
+                                <input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control is-invalid" id="floatingPassword2"/>
+                                    <label for="floatingPassword">Password not match</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control is-valid" id="floatingPassword2"/>
+                                    <label for="floatingPassword">Password match</label>
+                                </div>
+								<!--end::Input-->
+							<div class="fv-plugins-message-container invalid-feedback"></div></div>
+							<!--end::Input group-->
+
 							<!--begin::Actions-->
 							<div class="text-center">
 								<!--begin::Submit button-->
 								<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
-									<span class="indicator-label">login</span>
+									<span class="indicator-label">Create an account</span>
 								</button>
 								<!--end::Submit button-->
 							</div>

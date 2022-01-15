@@ -55,5 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['login'] = 'Auth/index';
+$route['signup'] = 'Auth/signup';
 $route['cara'] = 'Welcome/cara_curhat';
 $route['coach'] = 'Welcome/coach_profile';

@@ -7,7 +7,7 @@
                 <div class="text-gray-600 fw-bold fs-2 mt-5 mb-5"><strong><u>nyamancurhat.id</u></strong> adalah layanan curhat yang diasuh oleh coach profesional, dimana kamu bisa merasa nyaman cerita apapun tanpa perlu berbagi identitas apapun.</div>
                 <div class="button-group mt-8">
                     <a href="<?= site_url('login') ?>" class="btn btn-primary me-4">Book Session Now</a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-outline btn-outline-primary btn-active-light-primary mt-5 mt-lg-0">Try Free Session!</a>
+                    <a href="<?= site_url('login') ?>" class="btn btn-outline btn-outline-primary btn-active-light-primary">Try Free Session!</a>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-sm-2">

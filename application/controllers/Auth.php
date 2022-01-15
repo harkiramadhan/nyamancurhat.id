@@ -8,6 +8,10 @@ class Auth extends CI_Controller{
         $this->load->view('login');
     }
 
+    function signup(){
+        $this->load->view('signup');
+    }
+
     function check(){
 
     }
