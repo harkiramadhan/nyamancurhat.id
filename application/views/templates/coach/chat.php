@@ -31,7 +31,10 @@
                     <!--begin::List-->
                     <div class="scroll-y me-n5 pe-5 h-200px h-lg-auto" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_header, #kt_toolbar, #kt_footer, #kt_chat_contacts_header" data-kt-scroll-wrappers="#kt_content, #kt_chat_contacts_body" data-kt-scroll-offset="5px" style="max-height: 479px;">
                         
-                        <?php foreach($users->result() as $row){ ?>
+                        <?php 
+                            foreach($users->result() as $row){ 
+                                $lastChat = $this->Mchat->getMessage($user->id, $row->id, "DESC", 1);
+                        ?>
                         <!--begin::User-->
                         <div class="d-flex flex-stack py-4">
                             <!--begin::Details-->
@@ -44,7 +47,15 @@
                                 <!--begin::Details-->
                                 <div class="ms-5">
                                     <a role="button" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2 btn-chat-users" data-userid="<?= $row->id ?>"><?= $row->f_name." ".$row->l_name ?></a>
-                                    <div class="fw-bold text-muted"><?= $row->email ?></div>
+                                    <div class="fw-bold text-muted">
+                                        <?php 
+                                            if($lastChat->num_rows() > 0):
+                                               echo (strlen($lastChat->row()->message) > 50) ? substr($lastChat->row()->message,0,50).'...' :$lastChat->row()->message;
+                                            else:
+                                                echo $row->email;
+                                            endif;
+                                        ?>
+                                    </div>
                                 </div>
                                 <!--end::Details-->
                             </div>

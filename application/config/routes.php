@@ -59,6 +59,7 @@ $route['validate'] = 'Auth/validate';
 $route['signup'] = 'Auth/signup';
 $route['register'] = 'Auth/register';
 $route['recovery'] = 'Auth/forgot_password';
+$route['logout'] = 'Auth/logout';
 
 ## Welcome
 $route['cara'] = 'Welcome/cara_curhat';

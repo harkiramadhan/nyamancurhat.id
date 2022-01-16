@@ -86,4 +86,9 @@ class Auth extends CI_Controller{
     function forgot_password(){
 
     }
+
+    function logout(){
+        $this->session->sess_destroy();
+        redirect('', 'refresh');
+    }
 }

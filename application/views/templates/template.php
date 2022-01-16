@@ -88,7 +88,7 @@ License: For each use you must have a valid license purchased only from above li
 														<a class="nav-link h-100 <?= ($this->uri->segment(1) == 'chat') ? 'active' : 'text-hover-inverse-white' ?>" href="<?= site_url('chat') ?>">Chat</a>
 													</li>
 													<li class="nav-item">
-														<a class="nav-link h-100 <?= ($this->uri->segment(1) == 'account') ? 'active' : 'text-hover-inverse-white' ?>" href="<?= site_url('account') ?>">Account</a>
+														<a class="nav-link h-100 <?= ($this->uri->segment(1) == 'account') ? 'active' : 'text-hover-inverse-white' ?>" href="#">Account</a>
 													</li>
 												</ul>
 											</div>
@@ -142,148 +142,12 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Menu separator-->
 												<!--begin::Menu item-->
 												<div class="menu-item px-5">
-													<a href="../../demo20/dist/account/overview.html" class="menu-link px-5">My Profile</a>
+													<a href="#" class="menu-link px-5">My Profile</a>
 												</div>
 												<!--end::Menu item-->
 												<!--begin::Menu item-->
 												<div class="menu-item px-5">
-													<a href="../../demo20/dist/apps/projects/list.html" class="menu-link px-5">
-														<span class="menu-text">My Projects</span>
-														<span class="menu-badge">
-															<span class="badge badge-light-danger badge-circle fw-bolder fs-7">3</span>
-														</span>
-													</a>
-												</div>
-												<!--end::Menu item-->
-												<!--begin::Menu item-->
-												<div class="menu-item px-5" data-kt-menu-trigger="hover" data-kt-menu-placement="left-start">
-													<a href="#" class="menu-link px-5">
-														<span class="menu-title">My Subscription</span>
-														<span class="menu-arrow"></span>
-													</a>
-													<!--begin::Menu sub-->
-													<div class="menu-sub menu-sub-dropdown w-175px py-4">
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/referrals.html" class="menu-link px-5">Referrals</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/billing.html" class="menu-link px-5">Billing</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/statements.html" class="menu-link px-5">Payments</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/statements.html" class="menu-link d-flex flex-stack px-5">Statements
-															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="View your statements"></i></a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu separator-->
-														<div class="separator my-2"></div>
-														<!--end::Menu separator-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<div class="menu-content px-3">
-																<label class="form-check form-switch form-check-custom form-check-solid">
-																	<input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications" />
-																	<span class="form-check-label text-muted fs-7">Notifications</span>
-																</label>
-															</div>
-														</div>
-														<!--end::Menu item-->
-													</div>
-													<!--end::Menu sub-->
-												</div>
-												<!--end::Menu item-->
-												<!--begin::Menu item-->
-												<div class="menu-item px-5">
-													<a href="../../demo20/dist/account/statements.html" class="menu-link px-5">My Statements</a>
-												</div>
-												<!--end::Menu item-->
-												<!--begin::Menu separator-->
-												<div class="separator my-2"></div>
-												<!--end::Menu separator-->
-												<!--begin::Menu item-->
-												<div class="menu-item px-5" data-kt-menu-trigger="hover" data-kt-menu-placement="left-start">
-													<a href="#" class="menu-link px-5">
-														<span class="menu-title position-relative">Language
-														<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-														<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="" /></span></span>
-													</a>
-													<!--begin::Menu sub-->
-													<div class="menu-sub menu-sub-dropdown w-175px py-4">
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/settings.html" class="menu-link d-flex px-5 active">
-															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/united-states.svg" alt="" />
-															</span>English</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/settings.html" class="menu-link d-flex px-5">
-															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/spain.svg" alt="" />
-															</span>Spanish</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/settings.html" class="menu-link d-flex px-5">
-															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/germany.svg" alt="" />
-															</span>German</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/settings.html" class="menu-link d-flex px-5">
-															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/japan.svg" alt="" />
-															</span>Japanese</a>
-														</div>
-														<!--end::Menu item-->
-														<!--begin::Menu item-->
-														<div class="menu-item px-3">
-															<a href="../../demo20/dist/account/settings.html" class="menu-link d-flex px-5">
-															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/france.svg" alt="" />
-															</span>French</a>
-														</div>
-														<!--end::Menu item-->
-													</div>
-													<!--end::Menu sub-->
-												</div>
-												<!--end::Menu item-->
-												<!--begin::Menu item-->
-												<div class="menu-item px-5 my-1">
-													<a href="../../demo20/dist/account/settings.html" class="menu-link px-5">Account Settings</a>
-												</div>
-												<!--end::Menu item-->
-												<!--begin::Menu item-->
-												<div class="menu-item px-5">
-													<a href="../../demo20/dist/authentication/flows/basic/sign-in.html" class="menu-link px-5">Sign Out</a>
-												</div>
-												<!--end::Menu item-->
-												<!--begin::Menu separator-->
-												<div class="separator my-2"></div>
-												<!--end::Menu separator-->
-												<!--begin::Menu item-->
-												<div class="menu-item px-5">
-													<div class="menu-content px-5">
-														<label class="form-check form-switch form-check-custom form-check-solid pulse pulse-success" for="kt_user_menu_dark_mode_toggle">
-															<input class="form-check-input w-30px h-20px" type="checkbox" value="1" name="mode" id="kt_user_menu_dark_mode_toggle" data-kt-url="../../demo20/dist/index.html" />
-															<span class="pulse-ring ms-n1"></span>
-															<span class="form-check-label text-gray-600 fs-7">Dark Mode</span>
-														</label>
-													</div>
+													<a href="<?= site_url('logout') ?>" class="menu-link px-5">Sign Out</a>
 												</div>
 												<!--end::Menu item-->
 											</div>
@@ -309,11 +173,11 @@ License: For each use you must have a valid license purchased only from above li
                                             <img alt="Logo" src="<?= base_url('assets/img/logo.svg') ?>" class="h-25px mb-3 mt-3" />
                                         </div>
                                         <div class="d-flex flex-column flex-lg-row gap-2">
-                                            <a class="btn btn-sm btn-light-primary fw-bolder" href="../../demo20/dist/apps/ecommerce/catalog/products.html">eCommerce</a>
-                                            <a class="btn btn-sm btn-light-danger fw-bolder" href="../../demo20/dist/apps/file-manager/folders.html">File Manager</a>
+                                            <a class="btn btn-sm btn-light-primary fw-bolder" href="<?= site_url('chat') ?>">Chat</a>
+                                            <a class="btn btn-sm btn-light-info fw-bolder" href="#">Account</a>
                                         </div>
-                                        <div class="d-flex flex-column flex-lg-row gap-2">
-                                            <a class="btn btn-sm btn-light-info fw-bolder" href="../../demo20/dist/apps/subscriptions/view.html">More Apps</a>
+                                        <div class="d-flex flex-column flex-lg-row gap-2 mt-10">
+                                            <a class="btn btn-sm btn-light-danger fw-bolder" href="<?= site_url('logout') ?>">Sign Out</a>
                                         </div>
                                     </div>
                                     <!--end::Wrapper-->
@@ -380,7 +244,11 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="<?= base_url('assets/js/custom/utilities/modals/create-campaign.js') ?>"></script>
 		<script src="<?= base_url('assets/js/custom/utilities/modals/create-app.js') ?>"></script>
 		<script src="<?= base_url('assets/js/custom/utilities/modals/users-search.js') ?>"></script>
-		<script src="<?= base_url('assets/js/chat.js') ?>"></script>
+		<?php if($this->session->userdata('role') == 2): ?>
+			<script src="<?= base_url('assets/js/chat.js') ?>"></script>
+		<?php elseif($this->session->userdata('role') == 3): ?>
+			<script src="<?= base_url('assets/js/clients/chat.js') ?>"></script>
+		<?php endif; ?>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>

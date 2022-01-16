@@ -84,11 +84,13 @@ class Chat extends CI_Controller{
                                 <i class="fas fa-eye fs-2"></i>
                             </button>
                         </div>
-                        <div class="me-n3">
-                            <button class="btn btn-sm btn-icon btn-danger btn-close">
-                                <i class="fas fa-times fs-2"></i>
-                            </button>
-                        </div>
+                        <?php if($this->session->userdata('role') == 2): ?>
+                            <div class="me-n3">
+                                <button class="btn btn-sm btn-icon btn-danger btn-close">
+                                    <i class="fas fa-times fs-2"></i>
+                                </button>
+                            </div>
+                        <?php endif; ?>
                         <!--end::Menu-->
                     </div>
                     <!--end::Card toolbar-->
@@ -101,7 +103,8 @@ class Chat extends CI_Controller{
                         <img src="<?= base_url('assets/img/loader.svg') ?>" alt="" class="mb-3" style="height: 75px;"> <br>
                         <small class="fs-5 fw-bolder text-gray-900 text-hover-primary">Loading Messages...</small>
                     </div>
-                    <div class="scroll-y me-n5 pe-5 h-300px h-lg-auto scroller-box" data-kt-element="messages" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_header, #kt_toolbar, #kt_footer, #kt_chat_messenger_header, #kt_chat_messenger_footer" data-kt-scroll-wrappers="#kt_content, #kt_chat_messenger_body" data-kt-scroll-offset="5px" style="max-height: 332px;">
+                    <div class="scroll-y me-n5 pe-5 h-300px h-lg-auto scroller-box" data-kt-element="messages" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_header, #kt_toolbar, #kt_footer, #kt_chat_messenger_header, #kt_chat_messenger_footer" data-kt-scroll-wrappers="#kt_content, #kt_chat_messenger_body" data-kt-scroll-offset="5px" style="max-height: 200px;">
+                    
                         <div class="chat-box">
                             
                         </div>
@@ -111,11 +114,19 @@ class Chat extends CI_Controller{
                             <!--begin::Wrapper-->
                             <div class="d-flex flex-column align-items-end">
                                 <!--begin::User-->
-                                <div class="d-flex align-items-center mb-2">
+                                <div class="d-flex align-items-end mb-2">
                                     <!--begin::Details-->
+                                    <div class="me-2 my-auto">
+                                        <img src="<?= base_url('assets/img/loader.svg') ?>" style="height: 25px;"> <br>
+                                    </div>
                                     <div class="me-3">
-                                        <span class="text-muted fs-7 mb-1">Just now</span>
-                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary ms-1">You</a>
+                                        <span class="float-right me-3" style="float: right"> 
+                                            <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary">You</a>
+                                        </span>
+                                        <br>
+                                        <span class="text-muted fs-7 mb-1" style="float: left;">
+                                            Just now
+                                        </span>
                                     </div>
                                     <!--end::Details-->
                                     <!--begin::Avatar-->
@@ -132,6 +143,7 @@ class Chat extends CI_Controller{
                             <!--end::Wrapper-->
                         </div>
                         <!--end::Message(template for out)-->
+                        <div class="d-flex justify-content-end mb-10" id="scroll-template"></div>
                         
                     </div>
                     <!--end::Messages-->
@@ -212,6 +224,12 @@ class Chat extends CI_Controller{
                     }
                 })
 
+                function scrollToBox(){
+                    $('.scroller-box').animate({
+                        scrollTop: $(".scroller-box")[0].scrollHeight
+                    }, 100)
+                }
+
                 function postMessage(message){
                     var userid = '<?= $userid ?>'
                     var clientid = '<?= $clientid ?>'
@@ -224,11 +242,13 @@ class Chat extends CI_Controller{
                             $('.text-message').val('')
                             $('.template-msg-text').text(message)
                             $('.template-msg-out').removeClass('d-none')
+                            scrollToBox()
                         }, 
                         success: function(res){
                             if(res.status == 200){
                                 $('.template-msg-text').empty()
                                 $('.template-msg-out').addClass('d-none')
+                                scrollToBox()
                             }else{
                                 location.reload()
                             }
@@ -296,8 +316,13 @@ class Chat extends CI_Controller{
                                 <div class="d-flex align-items-center mb-2">
                                     <!--begin::Details-->
                                     <div class="me-3">
-                                        <span class="text-muted fs-7 mb-1"><?= $this->time_elapsed_string($chat[$i]['time']) ?></span>
-                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary ms-1">You</a>
+                                        <span class="float-right" style="float: right"> 
+                                            <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary">You</a>
+                                        </span>
+                                        <br>
+                                        <span class="text-muted fs-7 mb-1" style="float: left;">
+                                            <?= $this->time_elapsed_string($chat[$i]['time']) ?>
+                                        </span>
                                     </div>
                                     <!--end::Details-->
                                     <!--begin::Avatar-->
@@ -328,7 +353,8 @@ class Chat extends CI_Controller{
                                     <!--end::Avatar-->
                                     <!--begin::Details-->
                                     <div class="ms-3">
-                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary me-1"><?= $client->f_name." ".$client->l_name ?></a>
+                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary"><?= $client->f_name." ".$client->l_name ?></a>
+                                        <br>
                                         <span class="text-muted fs-7 mb-1"><?= $this->time_elapsed_string($chat[$i]['time']) ?></span>
                                     </div>
                                     <!--end::Details-->
