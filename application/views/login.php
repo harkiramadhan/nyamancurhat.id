@@ -50,7 +50,7 @@ License: For each use you must have a valid license purchased only from above li
 					<!--begin::Wrapper-->
 					<div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
 						<!--begin::Form-->
-						<form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_sign_in_form" action="#">
+						<form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework needs-validation" id="kt_sign_in_form" action="<?= site_url('validate') ?>" method="POST">
 							<!--begin::Heading-->
 							<div class="text-center mb-10">
 								<!--begin::Title-->
@@ -62,13 +62,18 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Link-->
 							</div>
 							<!--begin::Heading-->
+
+							<?php if(@$this->session->flashdata('msg')): ?>
+                                <div class="mb-10 text-center text-danger"><strong><?= $this->session->flashdata('msg') ?></strong></div>
+                            <?php endif; ?>
+
 							<!--begin::Input group-->
 							<div class="fv-row mb-10 fv-plugins-icon-container">
 								<!--begin::Label-->
 								<label class="form-label fs-6 fw-bolder text-dark">Email</label>
 								<!--end::Label-->
 								<!--begin::Input-->
-								<input class="form-control form-control-lg form-control-solid" type="email" name="email" autocomplete="off">
+								<input class="form-control form-control-lg form-control-solid" type="email" name="email" placeholder="Email" required>
 								<!--end::Input-->
 							<div class="fv-plugins-message-container invalid-feedback"></div></div>
 							<!--end::Input group-->
@@ -80,12 +85,19 @@ License: For each use you must have a valid license purchased only from above li
 									<label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
 									<!--end::Label-->
 									<!--begin::Link-->
-									<a href="/metronic8/demo20/../demo20/authentication/layouts/basic/password-reset.html" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
+									<a href="<?= site_url('recovery') ?>" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
 									<!--end::Link-->
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Input-->
-								<input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off">
+								<?php if(@$this->session->flashdata('msg_pswd')): ?>
+									<div class="form-floating">
+										<input type="password" class="form-control is-invalid" type="password" name="password" placeholder="Password" required/>
+										<label for="conf-pwd" id="text-conf-pwd"><?= $this->session->flashdata('msg_pswd') ?></label>
+									</div>
+								<?php else: ?>
+									<input class="form-control form-control-lg form-control-solid" type="password" name="password" placeholder="Password" required>
+								<?php endif; ?>
 								<!--end::Input-->
 							<div class="fv-plugins-message-container invalid-feedback"></div></div>
 							<!--end::Input group-->

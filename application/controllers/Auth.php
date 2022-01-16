@@ -2,6 +2,10 @@
 class Auth extends CI_Controller{
     function __construct(){
         parent::__construct();
+
+        $this->load->model([
+            'Muser'
+        ]);
     }
 
     function index(){
@@ -12,8 +16,29 @@ class Auth extends CI_Controller{
         $this->load->view('signup');
     }
 
-    function check(){
+    function validate(){
+        $email = $this->input->post('email', TRUE);
+        $password = $this->input->post('password', TRUE);
 
+        $cek = $this->Muser->check($email, $password);
+        if($cek->num_rows() > 0){
+            $data = $cek->row();
+            
+            if($data->status != 0){
+                $this->session->set_userdata('masuk', TRUE);
+                $this->session->set_userdata('role', $data->role);
+                $this->session->set_userdata('id', $data->id);
+
+                redirect('dashboard', 'refresh');
+            }else{
+                $this->session->set_flashdata('msg', "Your account is not active");
+                redirect($_SERVER['HTTP_REFERER']);
+            }
+        }else{
+            $this->session->set_flashdata('msg', "Invalid email or password");
+            $this->session->set_flashdata('msg_pswd', "Invalid email or password");
+            redirect($_SERVER['HTTP_REFERER']);
+        }
     }
 
     function register(){
@@ -56,5 +81,9 @@ class Auth extends CI_Controller{
             $this->session->set_flashdata('msg', validation_errors());
             redirect($_SERVER['HTTP_REFERER']);
         }
+    }
+
+    function forgot_password(){
+
     }
 }

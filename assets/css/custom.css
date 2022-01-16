@@ -6,6 +6,33 @@
     max-width: 50%;
 }
 
+.timeline-label .timeline-badge {
+    flex-shrink: 0;
+    background: #fff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 1px;
+    margin-left: -2.5rem !important;
+    padding: 3px!important;
+    border: 6px solid #fff!important;
+}
+
+.timeline-label:before {
+    content: "";
+    position: absolute;
+    left: 25px !important;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    background-color: #eff2f5;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .mt-n75{

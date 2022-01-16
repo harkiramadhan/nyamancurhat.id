@@ -55,9 +55,14 @@ $route['translate_uri_dashes'] = FALSE;
 
 ## Auth
 $route['login'] = 'Auth/index';
+$route['validate'] = 'Auth/validate';
 $route['signup'] = 'Auth/signup';
 $route['register'] = 'Auth/register';
+$route['recovery'] = 'Auth/forgot_password';
 
 ## Welcome
 $route['cara'] = 'Welcome/cara_curhat';
 $route['coach'] = 'Welcome/coach_profile';
+
+## Chat
+$route['chat'] = 'Chat/index';
